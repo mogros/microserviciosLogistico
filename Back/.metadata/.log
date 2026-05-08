@@ -1,0 +1,1637 @@
+!SESSION 2026-05-07 21:45:50.290 -----------------------------------------------
+eclipse.buildId=4.22.1.202405011620
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.ui 2 0 2026-05-07 21:46:14.207
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-05-07 21:46:14.208
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2026-05-07 21:46:14.732
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-05-07 21:46:14.732
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-05-07 21:46:24.368
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\lenov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:46:53.495
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:46:56.565
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:46:56.568
+!MESSAGE Boot project ADDED: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:46:56.570
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:46:56.699
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-07 21:46:56.745
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Laptop SERVIR\Mario\Java\Instaaldores\sts-4.22.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre\bin\javaw.exe
+-cp
+D:\Laptop SERVIR\Mario\Java\Instaaldores\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes;D:\Laptop SERVIR\Mario\Java\Instaaldores\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\Laptop SERVIR\Mario\Java\Instaaldores\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/lenov/OneDrive/Documents/chatgpt/Logistico/logistica/Back/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1778208416742
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:46:56.747
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-07 21:46:56.778
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 7864
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:46:57.128
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:47:15.206
+!MESSAGE Classpath changed for project: logistica-auth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:47:16.075
+!MESSAGE Classpath changed for project: logistica-auth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:47:16.077
+!MESSAGE Boot project ADDED: logistica-auth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:47:16.516
+!MESSAGE Classpath changed for project: logistica-auth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:47:19.210
+!MESSAGE Classpath changed for project: logistica-auth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:03.053
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:03.272
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:03.273
+!MESSAGE Boot project ADDED: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:03.628
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:22.721
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:22.962
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:22.964
+!MESSAGE Boot project ADDED: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:23.524
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:38.695
+!MESSAGE Classpath changed for project: logistica-eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:39.074
+!MESSAGE Classpath changed for project: logistica-eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:39.075
+!MESSAGE Boot project ADDED: logistica-eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:39.343
+!MESSAGE Classpath changed for project: logistica-eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:51.171
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:51.486
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:51.487
+!MESSAGE Boot project ADDED: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:48:51.649
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:07.064
+!MESSAGE Classpath changed for project: logistica-productos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:07.154
+!MESSAGE Classpath changed for project: logistica-productos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:07.155
+!MESSAGE Boot project ADDED: logistica-productos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:07.288
+!MESSAGE Classpath changed for project: logistica-productos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:25.132
+!MESSAGE Classpath changed for project: logistica-proveedores
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:25.200
+!MESSAGE Classpath changed for project: logistica-proveedores
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:25.200
+!MESSAGE Boot project ADDED: logistica-proveedores
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:25.337
+!MESSAGE Classpath changed for project: logistica-proveedores
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:38.355
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:38.428
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:38.429
+!MESSAGE Boot project ADDED: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:38.579
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:53.482
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:53.584
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:53.584
+!MESSAGE Boot project ADDED: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-07 21:49:53.704
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-05-07 21:51:16.530
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2026-05-08 08:52:54.728 -----------------------------------------------
+eclipse.buildId=4.22.1.202405011620
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.ui 2 0 2026-05-08 08:53:15.020
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-05-08 08:53:15.020
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2026-05-08 08:53:16.851
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-05-08 08:53:16.852
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2026-05-08 08:53:37.829
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\lenov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:42.337
+!MESSAGE Boot project ADDED: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:42.341
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:42.585
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:42.589
+!MESSAGE Boot project ADDED: logistica-auth
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:42.595
+!MESSAGE Boot project ADDED: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:42.682
+!MESSAGE Boot project ADDED: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:42.745
+!MESSAGE Boot project ADDED: logistica-eureka
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-08 08:53:42.769
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Laptop SERVIR\Mario\Java\Instaaldores\sts-4.22.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre\bin\javaw.exe
+-cp
+D:\Laptop SERVIR\Mario\Java\Instaaldores\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes;D:\Laptop SERVIR\Mario\Java\Instaaldores\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\Laptop SERVIR\Mario\Java\Instaaldores\sts-4.22.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.54.0.202405011602\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/lenov/OneDrive/Documents/chatgpt/Logistico/logistica/Back/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1778248422762
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:42.779
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:42.813
+!MESSAGE Boot project ADDED: logistica-gateway
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-05-08 08:53:42.915
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 14968
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:42.928
+!MESSAGE Boot project ADDED: logistica-productos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:43.210
+!MESSAGE Boot project ADDED: logistica-proveedores
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:43.317
+!MESSAGE Boot project ADDED: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 08:53:43.409
+!MESSAGE Boot project ADDED: logistica-ventas
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-08 09:34:43.049
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:34:44.290
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:34:44.294
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:34:44.299
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:34:44.303
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:34:44.323
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:34:44.342
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.jface 2 0 2026-05-08 09:34:47.394
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2026-05-08 09:34:47.394
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:35:53.128
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:35:53.130
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:41:55.295
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:41:55.296
+!MESSAGE Boot project REMOVED: commons-logistica
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:41:55.306
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:41:55.307
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:41:55.308
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:41:55.309
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:41:55.315
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:41:55.319
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:42:04.416
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:42:04.420
+!MESSAGE Boot project REMOVED: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:42:17.235
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:42:18.997
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:42:20.682
+!MESSAGE Classpath changed for project: logistica-proveedores
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:42:22.278
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:42:23.859
+!MESSAGE Classpath changed for project: logistica-productos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:42:25.169
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:47.003
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 09:43:47.003
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 09:43:47.004
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:47.004
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:47.006
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 09:43:47.046
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 09:43:47.046
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:43:47.069
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:43:47.070
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:43:47.070
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:43:47.072
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:43:47.078
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:43:47.080
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:48.867
+!MESSAGE Classpath changed for project: logistica-proveedores
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 09:43:48.869
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 09:43:48.869
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:48.872
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:48.873
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 09:43:49.015
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 09:43:49.016
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:50.821
+!MESSAGE Classpath changed for project: logistica-productos
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 09:43:50.824
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 09:43:50.824
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:50.826
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:50.877
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:52.224
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:52.227
+!MESSAGE Boot project ADDED: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:43:53.272
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:44:16.436
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:44:16.450
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:44:16.452
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:44:16.453
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:44:16.454
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:44:16.458
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 09:44:16.459
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:44:16.887
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:44:16.887
+!MESSAGE Boot project ADDED: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 09:44:17.063
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-05-08 10:16:34.696
+!MESSAGE Unexpected null value present!
+!STACK 0
+java.lang.IllegalStateException: Unexpected null value present!
+	at org.eclipse.lsp4e.internal.NullSafetyHelper.castNonNull(NullSafetyHelper.java:36)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticTokensClient.requestFullSemanticTokens(SemanticTokensClient.java:45)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.fullReconcile(SemanticHighlightReconcilerStrategy.java:239)
+	at org.eclipse.lsp4e.operations.semanticTokens.SemanticHighlightReconcilerStrategy.initialReconcile(SemanticHighlightReconcilerStrategy.java:258)
+	at org.eclipse.ui.internal.genericeditor.CompositeReconcilerStrategy.initialReconcile(CompositeReconcilerStrategy.java:48)
+	at org.eclipse.jface.text.reconciler.Reconciler.initialProcess(Reconciler.java:223)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:19:05.209
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:19:05.210
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:19:05.211
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:19:05.211
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:19:05.215
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:19:05.216
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:24:05.438
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:24:05.440
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:24:05.441
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:24:05.443
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:24:05.449
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 10:24:05.452
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.core.resources 4 2 2026-05-08 11:22:37.888
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1024)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.refreshResources(MavenBuilderImpl.java:325)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:196)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: The project description file (.project) for 'commons-logistica' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+java.lang.Exception: The project description file (.project) for 'commons-logistica' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:951)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1420)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:402)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:306)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.refreshResources(MavenBuilderImpl.java:325)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:196)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 271 2026-05-08 11:22:37.889
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2026-05-08 11:22:37.889
+!MESSAGE The project description file (.project) for 'commons-logistica' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'commons-logistica' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:951)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1420)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:402)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:306)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.refreshResources(MavenBuilderImpl.java:325)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:196)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2026-05-08 11:22:37.889
+!MESSAGE The project description file (.project) for 'commons-logistica' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'commons-logistica' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:951)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1420)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:402)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:306)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:1021)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:1004)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1601)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.refreshResources(MavenBuilderImpl.java:325)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:196)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:22:38.034
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:22:38.035
+!MESSAGE Boot project REMOVED: commons-logistica
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:22:38.057
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:22:38.058
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:22:38.060
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:22:38.061
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:22:38.070
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:22:38.075
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:22:42.321
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:22:56.782
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:22:57.441
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:22:58.623
+!MESSAGE Classpath changed for project: logistica-proveedores
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:22:59.806
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:01.133
+!MESSAGE Classpath changed for project: logistica-productos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:02.116
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:17.336
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 11:23:17.337
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 11:23:17.337
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:17.338
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:20.010
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 11:23:20.012
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 11:23:20.012
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:20.013
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:20.015
+!MESSAGE Classpath changed for project: logistica-proveedores
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 11:23:20.121
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 11:23:20.122
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:23.199
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 11:23:23.201
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 11:23:23.201
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:23.202
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:23.204
+!MESSAGE Classpath changed for project: logistica-productos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:23.244
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:23.519
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:23.522
+!MESSAGE Boot project ADDED: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:23:24.923
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:23:24.986
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:23:24.989
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:23:24.991
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:23:24.993
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:23:25.007
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:23:25.014
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:31.639
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:31.640
+!MESSAGE Boot project REMOVED: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:41.552
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:42.114
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:42.651
+!MESSAGE Classpath changed for project: logistica-proveedores
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:43.167
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:43.825
+!MESSAGE Classpath changed for project: logistica-productos
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:44.460
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:56.355
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 11:30:56.356
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 11:30:56.356
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:56.357
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:56.358
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 11:30:56.394
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 11:30:56.394
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:30:56.416
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:30:56.417
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:30:56.418
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:30:56.418
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:30:56.422
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:30:56.425
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:58.160
+!MESSAGE Classpath changed for project: logistica-proveedores
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 11:30:58.162
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 11:30:58.162
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:58.164
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:58.165
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:58.167
+!MESSAGE Classpath changed for project: logistica-productos
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 11:30:58.263
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 11:30:58.263
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2026-05-08 11:30:58.306
+!MESSAGE commons-logistica does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): commons-logistica does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:562)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2631)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2361)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2404)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolveDependencyProjectCPEs(ClasspathUtil.java:189)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:142)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:94)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2026-05-08 11:30:58.306
+!MESSAGE commons-logistica does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:59.203
+!MESSAGE Classpath changed for project: logistica-clientes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:30:59.205
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:31:00.160
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:31:00.162
+!MESSAGE Boot project ADDED: commons-logistica
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:31:00.881
+!MESSAGE Classpath changed for project: commons-logistica
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:31:20.155
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:31:20.156
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:31:20.157
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:31:20.158
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:31:20.161
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:31:20.164
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:37:30.477
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:37:30.478
+!MESSAGE Boot project REMOVED: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:37:37.223
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:37:37.224
+!MESSAGE Boot project REMOVED: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:38:40.167
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:38:40.523
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:38:40.525
+!MESSAGE Boot project ADDED: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:38:40.908
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:38:54.545
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:38:54.553
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:38:54.554
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:38:54.555
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:38:54.556
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:38:54.558
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:38:54.561
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:38:54.660
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:38:54.660
+!MESSAGE Boot project ADDED: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:38:54.855
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:46:16.911
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:46:16.911
+!MESSAGE Boot project REMOVED: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:46:21.936
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:46:21.937
+!MESSAGE Boot project REMOVED: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:50:05.998
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:50:06.297
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:50:06.299
+!MESSAGE Boot project ADDED: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:50:06.625
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:50:17.877
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:50:17.887
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:50:17.888
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:50:17.891
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:50:17.891
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:50:17.899
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 11:50:17.902
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:50:18.074
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:50:18.075
+!MESSAGE Boot project ADDED: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:50:18.429
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:59:14.058
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:59:14.060
+!MESSAGE Boot project REMOVED: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:59:19.631
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:59:19.632
+!MESSAGE Boot project REMOVED: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:59:57.016
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:59:57.397
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:59:57.399
+!MESSAGE Boot project ADDED: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 11:59:57.806
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 12:00:08.443
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 12:00:08.461
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 12:00:08.462
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 12:00:08.464
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 12:00:08.466
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 12:00:08.474
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 12:00:08.479
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 12:00:08.689
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 12:00:08.690
+!MESSAGE Boot project ADDED: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 12:00:09.069
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:57:30.527
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:57:30.531
+!MESSAGE Boot project REMOVED: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:57:36.747
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:57:36.748
+!MESSAGE Boot project REMOVED: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:58:17.712
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:58:18.305
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:58:18.307
+!MESSAGE Boot project ADDED: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:58:18.735
+!MESSAGE Classpath changed for project: logistica-compras
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:58:27.876
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 13:58:27.897
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 13:58:27.899
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 13:58:27.901
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 13:58:27.904
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 13:58:27.914
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 13:58:27.921
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:58:28.491
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:58:28.507
+!MESSAGE Boot project ADDED: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 13:58:30.391
+!MESSAGE Classpath changed for project: logistica-ventas
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:17:37.918
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:17:37.921
+!MESSAGE Boot project REMOVED: logistica-gateway
+
+!ENTRY Activator 4 0 2026-05-08 14:17:37.991
+!MESSAGE DebugException: Launch configuration logistica-gateway - LogisticaGatewayApplication at file:/C:/Users/lenov/OneDrive/Documents/chatgpt/Logistico/logistica/Back/.metadata/.plugins/org.eclipse.debug.core/.launches/logistica-gateway%20-%20LogisticaGatewayApplication.launch does not exist.
+!STACK 1
+org.eclipse.debug.core.DebugException: Launch configuration logistica-gateway - LogisticaGatewayApplication at file:/C:/Users/lenov/OneDrive/Documents/chatgpt/Logistico/logistica/Back/.metadata/.plugins/org.eclipse.debug.core/.launches/logistica-gateway%20-%20LogisticaGatewayApplication.launch does not exist.
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:777)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1251)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:487)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:438)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProjectName(AbstractBootLaunchConfigurationDelegate.java:316)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProject(AbstractBootLaunchConfigurationDelegate.java:301)
+	at org.springframework.ide.eclipse.boot.dash.model.LaunchConfDashElement.getProject(LaunchConfDashElement.java:68)
+	at org.springframework.ide.eclipse.boot.dash.model.LaunchConfDashElement.getParent(LaunchConfDashElement.java:89)
+	at org.springframework.ide.eclipse.boot.dash.model.ToggleFiltersModel$1.accept(ToggleFiltersModel.java:46)
+	at org.springframework.ide.eclipse.boot.dash.model.ToggleFiltersModel$1.accept(ToggleFiltersModel.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.util.Filters$2.accept(Filters.java:51)
+	at org.springsource.ide.eclipse.commons.livexp.util.Filters$2.accept(Filters.java:51)
+	at org.springframework.ide.eclipse.boot.dash.views.sections.BootDashUnifiedTreeSection$11.select(BootDashUnifiedTreeSection.java:417)
+	at org.eclipse.jface.viewers.ViewerFilter.filter(ViewerFilter.java:62)
+	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:855)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2210)
+	at org.eclipse.jface.viewers.TreeViewer.isExpandable(TreeViewer.java:553)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2238)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updatePlus(AbstractTreeViewer.java:2968)
+	at org.eclipse.jface.viewers.TreeViewer.updatePlus(TreeViewer.java:796)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1933)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1900)
+	at org.eclipse.jface.viewers.StructuredViewer.lambda$3(StructuredViewer.java:1486)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1392)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:367)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1353)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1486)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:533)
+	at org.springframework.ide.eclipse.boot.dash.views.sections.BootDashUnifiedTreeSection$3$1.run(BootDashUnifiedTreeSection.java:208)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:370)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:325)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:636)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:148)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:284)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:710)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:451)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:468)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.lambda$0(RefactoringWizardOpenOperation.java:190)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:209)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:126)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:44)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:436)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:140)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:57)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:452)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.DeleteAction.run(DeleteAction.java:197)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2026-05-08 14:17:37.993
+!MESSAGE Launch configuration logistica-gateway - LogisticaGatewayApplication at file:/C:/Users/lenov/OneDrive/Documents/chatgpt/Logistico/logistica/Back/.metadata/.plugins/org.eclipse.debug.core/.launches/logistica-gateway%20-%20LogisticaGatewayApplication.launch does not exist.
+
+!ENTRY org.eclipse.ui 4 0 2026-05-08 14:17:37.999
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springframework.ide.eclipse.boot.dash.model.BootProjectDashElement.getCurrentChildren()" because the return value of "org.springframework.ide.eclipse.boot.dash.model.LaunchConfDashElement.getParent()" is null
+	at org.springframework.ide.eclipse.boot.dash.model.ToggleFiltersModel$1.accept(ToggleFiltersModel.java:46)
+	at org.springframework.ide.eclipse.boot.dash.model.ToggleFiltersModel$1.accept(ToggleFiltersModel.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.util.Filters$2.accept(Filters.java:51)
+	at org.springsource.ide.eclipse.commons.livexp.util.Filters$2.accept(Filters.java:51)
+	at org.springframework.ide.eclipse.boot.dash.views.sections.BootDashUnifiedTreeSection$11.select(BootDashUnifiedTreeSection.java:417)
+	at org.eclipse.jface.viewers.ViewerFilter.filter(ViewerFilter.java:62)
+	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:855)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2210)
+	at org.eclipse.jface.viewers.TreeViewer.isExpandable(TreeViewer.java:553)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2238)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updatePlus(AbstractTreeViewer.java:2968)
+	at org.eclipse.jface.viewers.TreeViewer.updatePlus(TreeViewer.java:796)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1933)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalRefresh(AbstractTreeViewer.java:1900)
+	at org.eclipse.jface.viewers.StructuredViewer.lambda$3(StructuredViewer.java:1486)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1392)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:367)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1353)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1486)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:533)
+	at org.springframework.ide.eclipse.boot.dash.views.sections.BootDashUnifiedTreeSection$3$1.run(BootDashUnifiedTreeSection.java:208)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:370)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:325)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:636)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:148)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:284)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:710)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:451)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:468)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.lambda$0(RefactoringWizardOpenOperation.java:190)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:209)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:126)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:44)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:298)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:232)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:436)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:140)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:57)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:452)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.DeleteAction.run(DeleteAction.java:197)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:18:04.317
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:18:06.617
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:18:06.619
+!MESSAGE Boot project ADDED: logistica-gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:18:07.186
+!MESSAGE Classpath changed for project: logistica-gateway
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:07.241
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:07.243
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:07.245
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:07.248
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:07.261
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:07.267
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:53.543
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:53.545
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:53.546
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:53.548
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:53.556
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:18:53.560
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:32:25.290
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:32:25.291
+!MESSAGE Boot project REMOVED: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:33:09.947
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:33:10.504
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:33:10.506
+!MESSAGE Boot project ADDED: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:33:11.014
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:33:40.047
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:33:40.049
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:33:40.050
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:33:40.051
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:33:40.059
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:33:40.064
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:37:40.001
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:37:40.002
+!MESSAGE Boot project REMOVED: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:38:07.543
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:38:07.948
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:38:07.950
+!MESSAGE Boot project ADDED: logistica-reportes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2026-05-08 14:38:08.310
+!MESSAGE Classpath changed for project: logistica-reportes
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:38:46.658
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:38:46.659
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:38:46.662
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:38:46.663
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:38:46.672
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2026-05-08 14:38:46.678
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access

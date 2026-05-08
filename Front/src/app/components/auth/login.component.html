@@ -1,0 +1,35 @@
+<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1e293b 0%,#334155 100%);">
+  <div style="width:100%;max-width:420px;padding:16px;">
+    <div class="card border-0 shadow-lg" style="border-radius:16px;overflow:hidden;">
+      <div style="background:linear-gradient(135deg,#2563eb,#1d4ed8);padding:32px;text-align:center;color:white;">
+        <i class="bi bi-truck" style="font-size:48px;"></i>
+        <h3 class="mt-2 mb-1 fw-bold">Sistema Logístico</h3>
+        <p class="mb-0 opacity-75">Gestión integral de operaciones</p>
+      </div>
+      <div class="card-body p-4">
+        <div class="alert alert-danger" *ngIf="error">{{ error }}</div>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Usuario</label>
+            <input formControlName="username" class="form-control form-control-lg" placeholder="Ingresa tu usuario"
+                   [class.is-invalid]="username.invalid && username.touched">
+            <div class="invalid-feedback">El usuario es obligatorio</div>
+          </div>
+          <div class="mb-4">
+            <label class="form-label fw-semibold">Contraseña</label>
+            <input formControlName="password" type="password" class="form-control form-control-lg" placeholder="Ingresa tu contraseña"
+                   [class.is-invalid]="password.invalid && password.touched">
+            <div class="invalid-feedback">La contraseña es obligatoria</div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 btn-lg fw-bold" [disabled]="form.invalid || loading">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm me-2"></span>
+            {{ loading ? "Ingresando..." : "Ingresar" }}
+          </button>
+        </form>
+        <div class="mt-3 text-center text-muted" style="font-size:13px;">
+          Usuario por defecto: <strong>admin</strong> / <strong>Admin123!</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#1e293b;">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" routerLink="/dashboard">
+      <i class="bi bi-truck me-2"></i>Sistema Logístico
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed=!isCollapsed"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav me-auto" *ngIf="isLoggedIn">
+        <li class="nav-item"><a class="nav-link" routerLink="/dashboard" routerLinkActive="active"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/productos" routerLinkActive="active"><i class="bi bi-box me-1"></i>Productos</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/clientes" routerLinkActive="active"><i class="bi bi-people me-1"></i>Clientes</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/proveedores" routerLinkActive="active"><i class="bi bi-building me-1"></i>Proveedores</a></li>
+        <li class="nav-item" *ngIf="isVendedor"><a class="nav-link" routerLink="/ventas" routerLinkActive="active"><i class="bi bi-cart me-1"></i>Ventas</a></li>
+        <li class="nav-item" *ngIf="isComprador"><a class="nav-link" routerLink="/compras" routerLinkActive="active"><i class="bi bi-bag me-1"></i>Compras</a></li>
+        <li class="nav-item" *ngIf="isAdmin"><a class="nav-link" routerLink="/reportes" routerLinkActive="active"><i class="bi bi-bar-chart me-1"></i>Reportes</a></li>
+      </ul>
+      <ul class="navbar-nav ms-auto" *ngIf="isLoggedIn">
+        <li class="nav-item d-flex align-items-center me-3">
+          <span class="navbar-text text-white-50 me-2"><i class="bi bi-person-circle me-1"></i>{{ username }}</span>
+          <span *ngIf="isAdmin" class="badge bg-warning text-dark">Admin</span>
+        </li>
+        <li class="nav-item"><button class="btn btn-outline-light btn-sm" (click)="logout()">Salir</button></li>
+      </ul>
+      <ul class="navbar-nav ms-auto" *ngIf="!isLoggedIn">
+        <li class="nav-item"><a class="nav-link" routerLink="/login">Iniciar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

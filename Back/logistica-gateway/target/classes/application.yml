@@ -1,0 +1,91 @@
+spring:
+  application:
+    name: logistica-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: logistica-auth
+              uri: lb://logistica-auth
+              predicates:
+                - Path=/api/auth/**
+              filters:
+                - StripPrefix=1
+            - id: logistica-productos
+              uri: lb://logistica-productos
+              predicates:
+                - Path=/api/productos/**
+              filters:
+                - StripPrefix=2
+            - id: logistica-categorias
+              uri: lb://logistica-productos
+              predicates:
+                - Path=/api/categorias/**
+              filters:
+                - StripPrefix=1
+            - id: logistica-clientes
+              uri: lb://logistica-clientes
+              predicates:
+                - Path=/api/clientes/**
+              filters:
+                - StripPrefix=2
+            - id: logistica-proveedores
+              uri: lb://logistica-proveedores
+              predicates:
+                - Path=/api/proveedores/**
+              filters:
+                - StripPrefix=2
+            - id: logistica-cotizaciones
+              uri: lb://logistica-proveedores
+              predicates:
+                - Path=/api/cotizaciones/**
+              filters:
+                - StripPrefix=1
+            - id: logistica-ventas
+              uri: lb://logistica-ventas
+              predicates:
+                - Path=/api/ventas/**
+              filters:
+                - StripPrefix=2
+            - id: logistica-letras-venta
+              uri: lb://logistica-ventas
+              predicates:
+                - Path=/api/letras-venta/**
+              filters:
+                - StripPrefix=2
+            - id: logistica-compras
+              uri: lb://logistica-compras
+              predicates:
+                - Path=/api/compras/**
+              filters:
+                - StripPrefix=2
+            - id: logistica-letras-compra
+              uri: lb://logistica-compras
+              predicates:
+                - Path=/api/letras-compra/**
+              filters:
+                - StripPrefix=2
+            - id: logistica-reportes
+              uri: lb://logistica-reportes
+              predicates:
+                - Path=/api/reportes/**
+              filters:
+                - StripPrefix=1
+server:
+  port: 8090
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+app:
+  jwt:
+    secret: L0g1st1ca-JWT-S3cr3t-K3y-Sup3r-S3gur4-2024!
+  security:
+    public-paths: /api/auth/,/actuator/health
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO
+    com.logistica.app.gateway: DEBUG

@@ -1,0 +1,16 @@
+spring.application.name=logistica-auth
+server.port=8095
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+eureka.instance.instance-id=${spring.application.name}:${random.value}
+spring.datasource.url=jdbc:postgresql://localhost:5432/db_logistica
+spring.datasource.username=postgres
+spring.datasource.password=123456
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.generate-ddl=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+app.jwt.secret=L0g1st1ca-JWT-S3cr3t-K3y-Sup3r-S3gur4-2024!
+app.jwt.expiration-ms=3600000
+management.endpoints.web.exposure.include=health,info,metrics,prometheus
+management.endpoint.health.show-details=always

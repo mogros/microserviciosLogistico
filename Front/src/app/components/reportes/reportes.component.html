@@ -1,0 +1,104 @@
+<div class="page-container">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div><h2 class="fw-bold mb-1"><i class="bi bi-bar-chart me-2"></i>Reportes y Estadísticas</h2><p class="text-muted mb-0">Indicadores del negocio en tiempo real</p></div>
+    <button class="btn-primary-custom" (click)="cargar()" [disabled]="cargando"><i class="bi bi-arrow-clockwise me-1"></i>{{ cargando ? "Cargando..." : "Actualizar" }}</button>
+  </div>
+
+  <!-- KPIs -->
+  <div class="row g-3 mb-4">
+    <div class="col-6 col-md-3"><div class="card-custom text-center" style="border-left:5px solid #3b82f6;"><div class="kpi-val text-primary">S/ {{ resumen.totalVentas | number:"1.2-2" }}</div><div class="kpi-lbl">Total Ventas</div></div></div>
+    <div class="col-6 col-md-3"><div class="card-custom text-center" style="border-left:5px solid #f59e0b;"><div class="kpi-val text-warning">S/ {{ resumen.totalCompras | number:"1.2-2" }}</div><div class="kpi-lbl">Total Compras</div></div></div>
+    <div class="col-6 col-md-3"><div class="card-custom text-center" style="border-left:5px solid #10b981;"><div class="kpi-val text-success">S/ {{ resumen.utilidadBruta | number:"1.2-2" }}</div><div class="kpi-lbl">Utilidad Bruta</div></div></div>
+    <div class="col-6 col-md-3"><div class="card-custom text-center" style="border-left:5px solid #ef4444;"><div class="kpi-val text-danger">{{ resumen.letrasVencidas }}</div><div class="kpi-lbl">Letras Vencidas</div></div></div>
+  </div>
+  <div class="mb-3 d-flex gap-2 flex-wrap">
+    <button class="btn btn-sm btn-success" (click)="exportarResumen()"><i class="bi bi-download me-1"></i>Exportar Resumen</button>
+  </div>
+
+  <mat-tab-group [(selectedIndex)]="tabActiva" animationDuration="150ms" class="rep-tabs">
+
+    <!-- Ventas vs Compras -->
+    <mat-tab label="📊 Ventas vs Compras">
+      <div class="p-4">
+        <div class="d-flex justify-content-end mb-2"><button class="btn btn-sm btn-success" (click)="exportarVentasVsCompras()"><i class="bi bi-download me-1"></i>Exportar</button></div>
+        <div style="max-height:350px;"><canvas baseChart [data]="barData" [type]="barType" [options]="barOptions"></canvas></div>
+        <table class="table table-sm mt-3">
+          <thead class="table-light"><tr><th>Mes</th><th>Ventas</th><th>Compras</th><th>Utilidad</th></tr></thead>
+          <tbody><tr *ngFor="let d of ventasVsCompras"><td>{{ d.mes }}</td><td>S/ {{ d.ventas | number:"1.2-2" }}</td><td>S/ {{ d.compras | number:"1.2-2" }}</td><td [class.text-success]="d.utilidad>=0" [class.text-danger]="d.utilidad<0">S/ {{ d.utilidad | number:"1.2-2" }}</td></tr></tbody>
+        </table>
+      </div>
+    </mat-tab>
+
+    <!-- Tendencia Ventas -->
+    <mat-tab label="📈 Tendencia Ventas">
+      <div class="p-4">
+        <div class="d-flex justify-content-end mb-2"><button class="btn btn-sm btn-success" (click)="exportarVentasMes()"><i class="bi bi-download me-1"></i>Exportar</button></div>
+        <div style="max-height:350px;"><canvas baseChart [data]="lineData" [type]="lineType" [options]="lineOptions"></canvas></div>
+        <table class="table table-sm mt-3">
+          <thead class="table-light"><tr><th>Mes</th><th>Total Ventas</th></tr></thead>
+          <tbody><tr *ngFor="let d of ventasMes"><td>{{ d.mes }}</td><td>S/ {{ d.total | number:"1.2-2" }}</td></tr></tbody>
+        </table>
+      </div>
+    </mat-tab>
+
+    <!-- Top Clientes -->
+    <mat-tab label="👥 Top Clientes">
+      <div class="p-4">
+        <div class="d-flex justify-content-end mb-2"><button class="btn btn-sm btn-success" (click)="exportarTopClientes()"><i class="bi bi-download me-1"></i>Exportar</button></div>
+        <div class="row">
+          <div class="col-md-7" style="max-height:350px;"><canvas baseChart [data]="hbarData" [type]="hbarType" [options]="hbarOptions"></canvas></div>
+          <div class="col-md-5">
+            <table class="table table-sm">
+              <thead class="table-light"><tr><th>#</th><th>Cliente</th><th>Tipo</th><th>Acumulado</th></tr></thead>
+              <tbody><tr *ngFor="let c of topClientes; let i=index"><td>{{ i+1 }}</td><td>{{ c.nombre }}</td><td><span [class]="c.tipo==='VIP'?'badge-vip':c.tipo==='PREMIUM'?'badge-premium':'badge-pendiente'">{{ c.tipo }}</span></td><td>S/ {{ c.totalAcumulado | number:"1.2-2" }}</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+
+    <!-- Tipo de Pago -->
+    <mat-tab label="💳 Tipo de Pago">
+      <div class="p-4 row">
+        <div class="col-md-5" style="max-height:350px;"><canvas baseChart [data]="donaData" [type]="donaType" [options]="donaOptions"></canvas></div>
+        <div class="col-md-7 d-flex flex-column justify-content-center">
+          <div class="card-custom mb-3" style="border-left:5px solid #3b82f6;">
+            <h5 class="fw-bold mb-2">Contado</h5>
+            <p class="mb-1">Cantidad: <strong>{{ ventasTipo.contado?.cantidad || 0 }}</strong></p>
+            <p class="mb-0">Monto total: <strong>S/ {{ ventasTipo.contado?.monto | number:"1.2-2" }}</strong></p>
+          </div>
+          <div class="card-custom" style="border-left:5px solid #f59e0b;">
+            <h5 class="fw-bold mb-2">Crédito</h5>
+            <p class="mb-1">Cantidad: <strong>{{ ventasTipo.credito?.cantidad || 0 }}</strong></p>
+            <p class="mb-0">Monto total: <strong>S/ {{ ventasTipo.credito?.monto | number:"1.2-2" }}</strong></p>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+
+    <!-- Bajo Stock -->
+    <mat-tab label="⚠ Bajo Stock">
+      <div class="p-4">
+        <div class="d-flex justify-content-end mb-2"><button class="btn btn-sm btn-success" (click)="exportarBajoStock()"><i class="bi bi-download me-1"></i>Exportar</button></div>
+        <div *ngIf="bajoStock.length===0" class="alert alert-success"><i class="bi bi-check-circle me-2"></i>Sin productos bajo el punto de reorden.</div>
+        <table class="table" *ngIf="bajoStock.length>0">
+          <thead class="table-light"><tr><th>Producto</th><th>Categoría</th><th>Stock Actual</th><th>Punto Reorden</th><th>Déficit</th></tr></thead>
+          <tbody><tr *ngFor="let p of bajoStock"><td class="fw-semibold">{{ p.nombre }}</td><td>{{ p.categoria?.nombre || "-" }}</td><td><span class="badge-vencido">{{ p.stock }}</span></td><td>{{ p.puntoReorden }}</td><td class="text-danger fw-bold">{{ p.puntoReorden - p.stock }}</td></tr></tbody>
+        </table>
+      </div>
+    </mat-tab>
+
+    <!-- Letras Vencidas -->
+    <mat-tab label="🔴 Letras Vencidas">
+      <div class="p-4">
+        <div class="d-flex justify-content-end mb-2"><button class="btn btn-sm btn-success" (click)="exportarLetrasVencidas()"><i class="bi bi-download me-1"></i>Exportar</button></div>
+        <div *ngIf="letrasVencidas.length===0" class="alert alert-success"><i class="bi bi-check-circle me-2"></i>Sin letras vencidas.</div>
+        <table class="table" *ngIf="letrasVencidas.length>0">
+          <thead class="table-light"><tr><th>N° Letra</th><th>Venta</th><th>Vencimiento</th><th>Monto</th><th>Estado</th></tr></thead>
+          <tbody><tr *ngFor="let l of letrasVencidas"><td>{{ l.numeroLetra }}</td><td>{{ l.venta?.numeroVenta }}</td><td class="text-danger">{{ l.fechaVencimiento }}</td><td>S/ {{ l.monto | number:"1.2-2" }}</td><td><span class="badge-vencido">VENCIDA</span></td></tr></tbody>
+        </table>
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
+</div>

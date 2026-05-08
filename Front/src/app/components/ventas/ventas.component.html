@@ -1,0 +1,130 @@
+<div class="page-container">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold mb-0"><i class="bi bi-cart me-2"></i>Ventas</h2>
+    <a routerLink="/ventas/form" class="btn-primary-custom"><i class="bi bi-plus-lg me-1"></i>Nueva Venta</a>
+  </div>
+
+  <div class="card-custom">
+    <div *ngIf="cargando" class="text-center py-4"><div class="spinner-border text-primary"></div></div>
+    <div *ngIf="lista.length === 0 && !cargando" class="alert alert-info">Sin ventas registradas.</div>
+
+    <div class="table-responsive" *ngIf="lista.length > 0">
+      <table class="table table-hover align-middle">
+        <thead class="table-light">
+          <tr><th>N° Venta</th><th>Cliente</th><th>Fecha</th><th>Tipo</th>
+              <th>Subtotal</th><th>IGV</th><th>Total</th><th>Saldo</th>
+              <th>Estado</th><th>Acciones</th></tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let v of lista">
+            <td class="fw-bold text-primary">{{ v.numeroVenta }}</td>
+            <td>{{ v.clienteNombre }}</td>
+            <td>{{ v.fecha }}</td>
+            <td><span [class]="v.tipoPago==='CREDITO'?'badge-premium':'badge-pagado'">{{ v.tipoPago }}</span></td>
+            <td>S/ {{ v.subtotal | number:"1.2-2" }}</td>
+            <td>S/ {{ v.igv | number:"1.2-2" }}</td>
+            <td class="fw-bold">S/ {{ v.total | number:"1.2-2" }}</td>
+            <td [class.text-danger]="(v.saldoPendiente||0) > 0">S/ {{ v.saldoPendiente | number:"1.2-2" }}</td>
+            <td><span [class]="badgeEstado(v.estado!)">{{ v.estado }}</span></td>
+            <td>
+              <div class="d-flex gap-1">
+                <button class="btn btn-sm btn-outline-info" title="Ver productos" (click)="verDetalle(v)">
+                  <i class="bi bi-eye"></i>
+                </button>
+                <button *ngIf="v.tipoPago==='CREDITO'" class="btn btn-sm btn-outline-primary"
+                        title="Ver letras" (click)="verLetras(v)">
+                  <i class="bi bi-list-ol me-1"></i>Letras
+                </button>
+                <button *ngIf="v.estado !== 'ANULADO'" class="btn btn-sm btn-outline-danger"
+                        title="Anular" (click)="anular(v)">
+                  <i class="bi bi-x-circle"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ── Modal Detalle ──────────────────────────────────────────── -->
+<ng-template #modalDetalle let-modal>
+  <div class="modal-header bg-light">
+    <div>
+      <h5 class="modal-title fw-bold"><i class="bi bi-receipt me-2"></i>{{ ventaSeleccionada?.numeroVenta }}</h5>
+      <small class="text-muted">
+        Cliente: {{ ventaSeleccionada?.clienteNombre }} |
+        Fecha: {{ ventaSeleccionada?.fecha }} |
+        Tipo: {{ ventaSeleccionada?.tipoPago }}
+      </small>
+    </div>
+    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+  </div>
+  <div class="modal-body">
+    <div *ngIf="!detallesModal.length" class="text-center text-muted py-3">
+      <div class="spinner-border spinner-border-sm me-2"></div>Cargando productos...
+    </div>
+    <table class="table align-middle" *ngIf="detallesModal.length">
+      <thead class="table-light">
+        <tr><th>Producto</th><th class="text-center">Cant.</th><th class="text-end">P. Unit.</th><th class="text-end">Subtotal</th></tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of detallesModal">
+          <td class="fw-semibold">{{ d.nombreProducto }}</td>
+          <td class="text-center">{{ d.cantidad }}</td>
+          <td class="text-end">S/ {{ d.precioUnitario | number:"1.2-2" }}</td>
+          <td class="text-end">S/ {{ d.subtotal | number:"1.2-2" }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="modal-footer bg-light">
+    <div class="ms-auto text-end">
+      <p class="mb-1 text-muted">Subtotal: <strong>S/ {{ ventaSeleccionada?.subtotal | number:"1.2-2" }}</strong></p>
+      <p class="mb-1 text-muted">IGV (18%): <strong>S/ {{ ventaSeleccionada?.igv | number:"1.2-2" }}</strong></p>
+      <p class="mb-0 fs-5 fw-bold text-primary">Total: S/ {{ ventaSeleccionada?.total | number:"1.2-2" }}</p>
+    </div>
+  </div>
+</ng-template>
+
+<!-- ── Modal Letras ───────────────────────────────────────────── -->
+<ng-template #modalLetras let-modal>
+  <div class="modal-header bg-light">
+    <div>
+      <h5 class="modal-title fw-bold"><i class="bi bi-list-ol me-2"></i>Letras — {{ ventaSeleccionada?.numeroVenta }}</h5>
+      <small class="text-muted">
+        Saldo pendiente: <strong class="text-danger">S/ {{ ventaSeleccionada?.saldoPendiente | number:"1.2-2" }}</strong>
+      </small>
+    </div>
+    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+  </div>
+  <div class="modal-body">
+    <div *ngIf="!letrasModal.length" class="text-center text-muted py-3">
+      <div class="spinner-border spinner-border-sm me-2"></div>Cargando letras...
+    </div>
+    <table class="table align-middle" *ngIf="letrasModal.length">
+      <thead class="table-light">
+        <tr><th>N°</th><th>Vencimiento</th><th>Monto</th><th>Pagado</th><th>F. Pago</th><th>Estado</th><th>Acción</th></tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let l of letrasModal"
+            [class.table-success]="l.estado==='PAGADO'"
+            [class.table-danger]="l.estado==='VENCIDO'">
+          <td class="fw-bold">{{ l.numeroLetra }}</td>
+          <td>{{ l.fechaVencimiento }}</td>
+          <td>S/ {{ l.monto | number:"1.2-2" }}</td>
+          <td>S/ {{ l.montoPagado | number:"1.2-2" }}</td>
+          <td>{{ l.fechaPago || "—" }}</td>
+          <td><span [class]="badgeEstado(l.estado!)">{{ l.estado }}</span></td>
+          <td>
+            <button *ngIf="l.estado!=='PAGADO'" class="btn btn-sm btn-success" (click)="pagarLetra(l)">
+              <i class="bi bi-check2-circle me-1"></i>Pagar
+            </button>
+            <span *ngIf="l.estado==='PAGADO'" class="text-success"><i class="bi bi-check-circle"></i></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ng-template>
