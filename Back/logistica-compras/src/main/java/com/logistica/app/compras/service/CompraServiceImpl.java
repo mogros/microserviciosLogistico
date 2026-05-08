@@ -2,6 +2,7 @@ package com.logistica.app.compras.service;
 
 import com.logistica.commons.service.CommonServiceImpl;
 import com.logistica.app.compras.entity.*;
+import com.logistica.app.compras.clients.ProductoClient;
 import com.logistica.app.compras.repository.*;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,8 @@ public class CompraServiceImpl extends CommonServiceImpl<Compra, CompraRepositor
 
     @Autowired private LetraCompraRepository letraRepo;
     @Autowired private DetalleCompraRepository detalleRepo;
+    @Autowired private ProductoClient productoClient;
+    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(CompraServiceImpl.class);
 
     private final AtomicLong counter = new AtomicLong(1);
 
@@ -72,6 +75,7 @@ public class CompraServiceImpl extends CommonServiceImpl<Compra, CompraRepositor
                     .setScale(2, RoundingMode.HALF_UP)
             );
             detallesGuardados.add(detalleRepo.save(det));
+            try { productoClient.actualizarStock(det.getProductoId(), det.getCantidad()); log.info("Stock incrementado: producto={}", det.getProductoId()); } catch (Exception e) { log.warn("No se pudo incrementar stock del producto {}: {}", det.getProductoId(), e.getMessage()); }
         }
         saved.setDetalles(detallesGuardados);
 

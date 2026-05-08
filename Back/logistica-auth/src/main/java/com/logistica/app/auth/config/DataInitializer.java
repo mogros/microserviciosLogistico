@@ -20,7 +20,10 @@ public class DataInitializer implements CommandLineRunner {
 
     @Override public void run(String... args) {
         for (Rol.NombreRol nombre : Rol.NombreRol.values()) {
-            if (rolRepo.findByNombre(nombre).isEmpty()) { rolRepo.save(new Rol(nombre)); log.info("Rol creado: {}", nombre); }
+            if (rolRepo.findByNombre(nombre).isEmpty()) { 
+            	rolRepo.save(new Rol(nombre)); 
+            	log.info("Rol creado: {}", nombre); 
+            }
         }
         if (!usuarioRepo.existsByUsername("admin")) {
             Rol rolAdmin = rolRepo.findByNombre(Rol.NombreRol.ROLE_ADMIN).orElseThrow();

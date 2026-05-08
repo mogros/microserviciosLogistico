@@ -11,5 +11,9 @@ export class NavbarComponent implements OnInit {
       if (ok) { this.username = this.auth.getUsername(); this.isAdmin = this.auth.isAdmin(); this.isVendedor = this.auth.isVendedor(); this.isComprador = this.auth.isComprador(); }
     });
   }
-  logout() { this.auth.logout(); this.router.navigate(["/login"]); }
+  logout() { 
+    this.auth.logout(); 
+    this.router.navigate(["/login"]); 
+  }
+  
 }

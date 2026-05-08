@@ -8,10 +8,21 @@ import { CommonService } from "./common.service";
 @Injectable({ providedIn: "root" })
 export class ProductoService extends CommonService<Producto> {
   protected override baseEndPoint = `${BASE_ENDPOINT}/productos`;
+  
   constructor(http: HttpClient) { super(http); }
-  filtrar(nombre: string): Observable<Producto[]> { return this.http.get<Producto[]>(`${this.baseEndPoint}/filtrar/${nombre}`); }
-  bajoStock(): Observable<Producto[]> { return this.http.get<Producto[]>(`${this.baseEndPoint}/bajo-stock`); }
-  actualizarStock(id: number, cantidad: number): Observable<Producto> { return this.http.put<Producto>(`${this.baseEndPoint}/${id}/stock?cantidad=${cantidad}`, null); }
+
+  filtrar(nombre: string): Observable<Producto[]> { 
+    return this.http.get<Producto[]>(`${this.baseEndPoint}/filtrar/${nombre}`); 
+  }
+
+  bajoStock(): Observable<Producto[]> { 
+    return this.http.get<Producto[]>(`${this.baseEndPoint}/bajo-stock`); 
+  }
+
+  actualizarStock(id: number, cantidad: number): Observable<Producto> { 
+    return this.http.put<Producto>(`${this.baseEndPoint}/${id}/stock?cantidad=${cantidad}`, null); 
+  }
+  
 }
 @Injectable({ providedIn: "root" })
 export class CategoriaService extends CommonService<Categoria> {

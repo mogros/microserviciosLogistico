@@ -28,31 +28,42 @@
       </div>
     </div>
 
-    <!-- Agregar productos -->
     <div class="row g-3 mb-3">
       <div class="col-md-5">
         <label class="form-label fw-semibold">Producto</label>
         <select [(ngModel)]="productoSelId" class="form-select">
           <option [ngValue]="0">-- Seleccionar --</option>
-          <option *ngFor="let p of productos" [ngValue]="p.id">
+          <option *ngFor="let p of productos" [ngValue]="p.id"
+                  [disabled]="p.stock === 0">
             {{ p.nombre }} — S/ {{ p.precioVenta | number:"1.2-2" }}
-            <span *ngIf="p.stock <= p.puntoReorden"> ⚠ Stock: {{p.stock}}</span>
+            (Stock: {{ p.stock }})
+            {{ p.stock === 0 ? '⛔ Sin stock' : p.stock <= p.puntoReorden ? ' ⚠' : '' }}
           </option>
         </select>
+        <!-- Alerta de stock bajo para el producto seleccionado -->
+        <small *ngIf="productoSeleccionado && productoSeleccionado.stock <= productoSeleccionado.puntoReorden && productoSeleccionado.stock > 0"
+               class="text-warning fw-semibold">
+          ⚠ Stock bajo: solo {{ productoSeleccionado.stock }} unidades disponibles
+        </small>
       </div>
       <div class="col-md-3">
         <label class="form-label fw-semibold">Cantidad</label>
-        <input [(ngModel)]="cantidad" type="number" min="1" class="form-control">
+        <input [(ngModel)]="cantidad" type="number" min="1"
+               [max]="productoSeleccionado?.stock || 9999"
+               class="form-control"
+               [class.is-invalid]="productoSeleccionado && cantidad > (productoSeleccionado.stock || 0)">
+        <div class="invalid-feedback" *ngIf="productoSeleccionado && cantidad > (productoSeleccionado.stock || 0)">
+          Máximo disponible: {{ productoSeleccionado.stock }}
+        </div>
       </div>
       <div class="col-md-4 d-flex align-items-end">
         <button class="btn btn-outline-primary w-100" (click)="agregarDetalle()"
-                [disabled]="!productoSelId || cantidad < 1">
+                [disabled]="!productoSelId || cantidad < 1 || (productoSeleccionado && cantidad > (productoSeleccionado.stock || 0))">
           <i class="bi bi-plus-lg me-1"></i>Agregar
         </button>
       </div>
     </div>
 
-    <!-- Tabla de detalles -->
     <table class="table table-sm mb-3" *ngIf="venta.detalles?.length">
       <thead class="table-light">
         <tr><th>Producto</th><th class="text-center">Cant.</th><th class="text-end">P. Unit.</th><th class="text-end">Subtotal</th><th></th></tr>
@@ -72,7 +83,6 @@
       </tbody>
     </table>
 
-    <!-- Totales -->
     <div *ngIf="venta.detalles?.length" class="text-end mb-4 p-3 bg-light rounded">
       <p class="mb-1 text-muted">Subtotal: <strong>S/ {{ venta.subtotal | number:"1.2-2" }}</strong></p>
       <p class="mb-1 text-muted">IGV (18%): <strong>S/ {{ igvEstimado | number:"1.2-2" }}</strong></p>

@@ -9,11 +9,18 @@ import java.math.BigDecimal;
 @RestController
 public class ClienteController extends CommonController<Cliente,ClienteService> {
     @GetMapping("/buscar/{texto}")
-    public ResponseEntity<?> buscar(@PathVariable String texto){return ResponseEntity.ok(service.buscar(texto));}
+    public ResponseEntity<?> buscar(@PathVariable String texto){
+    	return ResponseEntity.ok(service.buscar(texto));
+    }
+    
     @GetMapping("/tipo/{tipo}")
     public ResponseEntity<?> porTipo(@PathVariable String tipo){
-        return ResponseEntity.ok(service.findByTipo(Cliente.TipoCliente.valueOf(tipo.toUpperCase())));}
+        return ResponseEntity.ok(service.findByTipo(Cliente.TipoCliente.valueOf(tipo.toUpperCase())));
+    }
+    
     @PutMapping("/{id}/acumulado")
     public ResponseEntity<?> actualizarAcumulado(@PathVariable Long id,@RequestParam BigDecimal monto){
-        return ResponseEntity.ok(service.actualizarAcumulado(id,monto));}
+        return ResponseEntity.ok(service.actualizarAcumulado(id,monto));
+    }
+    
 }

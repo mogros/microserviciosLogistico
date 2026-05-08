@@ -82,10 +82,12 @@ export class VentasComponent implements OnInit {
       cancelButtonText: "Cancelar"
     }).then(r => {
       if (r.isConfirmed) {
-        const ventaAnulada = { ...v, estado: "ANULADO" };
-        this.svc.editar(v.id!, ventaAnulada as any).subscribe(() => {
-          v.estado = "ANULADO" as any;
-          Swal.fire("Anulada", `Venta ${v.numeroVenta} anulada`, "success");
+        this.svc.anularVenta(v.id!).subscribe({
+          next: () => {
+            v.estado = "ANULADO" as any;
+            Swal.fire("Anulada", `Venta ${v.numeroVenta} anulada y stock devuelto`, "success");
+          },
+          error: err => Swal.fire("Error", err.error?.error || "No se pudo anular", "error")
         });
       }
     });

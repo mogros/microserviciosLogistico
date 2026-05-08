@@ -7,7 +7,15 @@ import { CommonService } from "./common.service";
 @Injectable({ providedIn: "root" })
 export class ClienteService extends CommonService<Cliente> {
   protected override baseEndPoint = `${BASE_ENDPOINT}/clientes`;
+  
   constructor(http: HttpClient) { super(http); }
-  buscar(texto: string): Observable<Cliente[]> { return this.http.get<Cliente[]>(`${this.baseEndPoint}/buscar/${texto}`); }
-  porTipo(tipo: string): Observable<Cliente[]> { return this.http.get<Cliente[]>(`${this.baseEndPoint}/tipo/${tipo}`); }
+
+  buscar(texto: string): Observable<Cliente[]> {
+     return this.http.get<Cliente[]>(`${this.baseEndPoint}/buscar/${texto}`); 
+    }
+
+  porTipo(tipo: string): Observable<Cliente[]> { 
+    return this.http.get<Cliente[]>(`${this.baseEndPoint}/tipo/${tipo}`); 
+  }
+  
 }

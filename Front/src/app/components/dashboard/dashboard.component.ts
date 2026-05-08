@@ -5,7 +5,9 @@ import { VentaService } from "../../services/venta.service";
 import { ChartConfiguration, ChartData, ChartType } from "chart.js";
 @Component({ selector: "app-dashboard", templateUrl: "./dashboard.component.html" })
 export class DashboardComponent implements OnInit {
-  resumen: any = {}; bajoStock: any[] = []; letrasVencidas: any[] = [];
+  resumen: any = {};
+  bajoStock: any[] = []; 
+  letrasVencidas: any[] = [];
   barType: ChartType = "bar";
   barData: ChartData<"bar"> = { labels: [], datasets: [] };
   barOptions: ChartConfiguration["options"] = {
@@ -23,8 +25,13 @@ export class DashboardComponent implements OnInit {
   donaOptions: ChartConfiguration["options"] = {
     responsive: true, plugins: { legend: { position: "bottom" }, title: { display: true, text: "Ventas por Tipo de Pago" } }
   };
-  constructor(private reporteService: ReporteService) {}
+
+  constructor(private reporteService: ReporteService) {
+
+  }
+
   ngOnInit() { this.cargarTodo(); }
+  
   cargarTodo() {
     this.reporteService.resumen().subscribe(r => this.resumen = r);
     this.reporteService.bajoStock().subscribe(d => this.bajoStock = d.slice(0, 5));

@@ -29,7 +29,6 @@ export class VentaFormComponent implements OnInit {
     this.productoSvc.listar().subscribe(d => this.productos = d as Producto[]);
   }
 
-  /** Al cambiar el select de cliente, capturar también el nombre */
   onClienteChange(clienteId: number) {
     const cliente = this.clientes.find(c => c.id === +clienteId);
     if (cliente) {
@@ -38,9 +37,23 @@ export class VentaFormComponent implements OnInit {
     }
   }
 
+  get productoSeleccionado(): Producto | undefined {
+    return this.productos.find(p => p.id === +this.productoSelId);
+  }
+
   agregarDetalle() {
     const p = this.productos.find(x => x.id === +this.productoSelId);
     if (!p) return;
+
+    // Validar stock en el frontend también
+    const stockDisponible = p.stock || 0;
+    if (this.cantidad > stockDisponible) {
+      Swal.fire("Stock insuficiente",
+        `Solo hay <b>${stockDisponible}</b> unidades de <b>${p.nombre}</b> disponibles.`,
+        "warning");
+      return;
+    }
+
     const det: DetalleVenta = {
       productoId: p.id!,
       nombreProducto: p.nombre,
@@ -76,7 +89,11 @@ export class VentaFormComponent implements OnInit {
         Swal.fire("Venta creada", `N° ${v.numeroVenta}`, "success");
         this.router.navigate(["/ventas"]);
       },
-      error: err => Swal.fire("Error", err.error?.message || err.error?.error || "Error al crear venta", "error")
+      error: err => {
+        // Mostrar el mensaje específico del backend (ej: "Stock insuficiente para...")
+        const msg = err.error?.error || err.error?.message || err.message || "Error al crear venta";
+        Swal.fire("Error", msg, "error");
+      }
     });
   }
 }

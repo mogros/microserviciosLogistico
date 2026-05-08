@@ -8,16 +8,25 @@ import java.util.List;
 
 @Service
 public class ClienteServiceImpl extends CommonServiceImpl<Cliente,ClienteRepository> implements ClienteService {
-    public List<Cliente> buscar(String t){return repository.findByNombreContainingIgnoreCaseOrRucContaining(t,t);}
-    public List<Cliente> findByTipo(Cliente.TipoCliente tipo){return repository.findByTipo(tipo);}
+    
+	public List<Cliente> buscar(String t){
+		return repository.findByNombreContainingIgnoreCaseOrRucContaining(t,t);
+	}
+	
+    public List<Cliente> findByTipo(Cliente.TipoCliente tipo){
+    	return repository.findByTipo(tipo);
+    }
+    
     public Cliente actualizarAcumulado(Long id, BigDecimal monto){
         Cliente c = repository.findById(id).orElseThrow(()->new RuntimeException("Cliente no encontrado: "+id));
         c.setTotalComprasAcumuladas(c.getTotalComprasAcumuladas().add(monto));
         return repository.save(evaluarYActualizarTipo(c));
     }
+    
     public Cliente evaluarYActualizarTipo(Long id){
         return evaluarYActualizarTipo(repository.findById(id).orElseThrow(()->new RuntimeException("Cliente no encontrado: "+id)));
     }
+    
     private Cliente evaluarYActualizarTipo(Cliente c){
         BigDecimal acum = c.getTotalComprasAcumuladas();
         // Criterios premium: > 10000 = VIP, > 5000 = PREMIUM

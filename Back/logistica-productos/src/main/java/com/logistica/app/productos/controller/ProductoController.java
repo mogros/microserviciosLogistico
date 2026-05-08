@@ -8,11 +8,20 @@ import java.util.List;
 
 @RestController
 public class ProductoController extends CommonController<Producto,ProductoService> {
-    @GetMapping("/filtrar/{nombre}")
-    public ResponseEntity<?> filtrar(@PathVariable String nombre){return ResponseEntity.ok(service.findByNombre(nombre));}
+    
+	@GetMapping("/filtrar/{nombre}")
+    public ResponseEntity<?> filtrar(@PathVariable String nombre){
+		return ResponseEntity.ok(service.findByNombre(nombre));
+	}
+	
     @GetMapping("/bajo-stock")
-    public ResponseEntity<List<Producto>> bajoStock(){return ResponseEntity.ok(service.findBajoStock());}
+    public ResponseEntity<List<Producto>> bajoStock(){
+    	return ResponseEntity.ok(service.findBajoStock());
+    }
+    
     @PutMapping("/{id}/stock")
     public ResponseEntity<?> actualizarStock(@PathVariable Long id,@RequestParam int cantidad){
-        return ResponseEntity.ok(service.actualizarStock(id,cantidad));}
+        return ResponseEntity.ok(service.actualizarStock(id,cantidad));
+    }
+    
 }

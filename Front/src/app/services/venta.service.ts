@@ -42,6 +42,10 @@ export class VentaService extends CommonService<Venta> {
     return this.http.put<LetraVenta>(`${this.baseEndPoint}/letras/${letraId}/pagar`, null);
   }
 
+  anularVenta(id: number): Observable<Venta> {
+    return this.http.put<Venta>(`${this.baseEndPoint}/${id}/anular`, null);
+  }
+
   porCliente(clienteId: number): Observable<Venta[]> {
     return this.http.get<Venta[]>(`${this.baseEndPoint}/cliente/${clienteId}`);
   }
