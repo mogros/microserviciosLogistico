@@ -155,7 +155,12 @@ public class ReporteController {
 
     @GetMapping("/letras-vencidas")
     public ResponseEntity<?> letrasVencidas() {
-        return ResponseEntity.ok(safe(() -> ventaClient.letrasVencidas()));
+        List<Map<String,Object>> letras = safe(() -> ventaClient.letrasVencidas());
+        if (!letras.isEmpty()) {
+            log.info("Primera letra vencida keys: {}", letras.get(0).keySet());
+            log.info("Primera letra vencida valores: {}", letras.get(0));
+        }
+        return ResponseEntity.ok(letras);
     }
 
     // ── Helpers ──────────────────────────────────────────────────

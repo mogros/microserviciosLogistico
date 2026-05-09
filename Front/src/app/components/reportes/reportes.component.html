@@ -95,7 +95,7 @@
         <div *ngIf="letrasVencidas.length===0" class="alert alert-success"><i class="bi bi-check-circle me-2"></i>Sin letras vencidas.</div>
         <table class="table" *ngIf="letrasVencidas.length>0">
           <thead class="table-light"><tr><th>N° Letra</th><th>Venta</th><th>Vencimiento</th><th>Monto</th><th>Estado</th></tr></thead>
-          <tbody><tr *ngFor="let l of letrasVencidas"><td>{{ l.numeroLetra }}</td><td>{{ l.venta?.numeroVenta }}</td><td class="text-danger">{{ l.fechaVencimiento }}</td><td>S/ {{ l.monto | number:"1.2-2" }}</td><td><span class="badge-vencido">VENCIDA</span></td></tr></tbody>
+          <tbody><tr *ngFor="let l of letrasVencidas"><td>{{ l.numeroLetra }}</td><td>{{ l.numeroVenta }}</td><td class="text-danger">{{ l.fechaVencimiento }}</td><td>S/ {{ l.monto | number:"1.2-2" }}</td><td><span class="badge-vencido">VENCIDA</span></td></tr></tbody>
         </table>
       </div>
     </mat-tab>

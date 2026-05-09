@@ -1,6 +1,6 @@
 import { Proveedor } from "./proveedor";
 export interface DetalleCompra { id?: number; productoId: number; nombreProducto: string; cantidad: number; precioUnitario: number; subtotal?: number; }
-export interface LetraCompra { id?: number; compraId?: number; numeroLetra?: number; fechaVencimiento: string; monto: number; montoPagado?: number; estado?: "PENDIENTE"|"PAGADO"|"VENCIDO"; fechaPago?: string; }
+export interface LetraCompra { id?: number; compraId?: number; numeroLetra?: number; numeroCompra?: string; proveedorNombre?: string; fechaVencimiento: string; monto: number; montoPagado?: number; estado?: "PENDIENTE"|"PAGADO"|"VENCIDO"; fechaPago?: string; }
 export interface Compra {
   id?: number; numeroCompra?: string; proveedorId: number; proveedorNombre?: string;
   fecha?: string; tipoPago: "CONTADO"|"CREDITO"; estado?: "PENDIENTE"|"PARCIAL"|"PAGADO"|"ANULADO";

@@ -9,16 +9,20 @@ import java.time.LocalDate;
 @Table(name = "letras_venta")
 public class LetraVenta {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // @JsonIgnore rompe la referencia circular:
-    // Venta → letras[] → LetraVenta → venta → letras[] → ...
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "venta_id", nullable = false)
     private Venta venta;
+
+    // Campos desnormalizados para evitar referencia circular en JSON
+    @Column(length = 20)
+    private String numeroVenta;
+
+    @Column(length = 200)
+    private String clienteNombre;
 
     @Column(nullable = false)
     private Integer numeroLetra;
@@ -45,6 +49,10 @@ public class LetraVenta {
     public void setId(Long id) { this.id = id; }
     public Venta getVenta() { return venta; }
     public void setVenta(Venta v) { this.venta = v; }
+    public String getNumeroVenta() { return numeroVenta; }
+    public void setNumeroVenta(String n) { this.numeroVenta = n; }
+    public String getClienteNombre() { return clienteNombre; }
+    public void setClienteNombre(String c) { this.clienteNombre = c; }
     public Integer getNumeroLetra() { return numeroLetra; }
     public void setNumeroLetra(Integer n) { this.numeroLetra = n; }
     public LocalDate getFechaVencimiento() { return fechaVencimiento; }

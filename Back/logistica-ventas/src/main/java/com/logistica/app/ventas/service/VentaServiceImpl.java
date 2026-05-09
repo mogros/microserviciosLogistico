@@ -122,6 +122,8 @@ public class VentaServiceImpl extends CommonServiceImpl<Venta, VentaRepository> 
             for (int i = 1; i <= cuotas; i++) {
                 LetraVenta letra = new LetraVenta();
                 letra.setVenta(saved);
+                letra.setNumeroVenta(saved.getNumeroVenta());
+                letra.setClienteNombre(saved.getClienteNombre());
                 letra.setNumeroLetra(i);
                 letra.setMonto(montoPorLetra);
                 letra.setFechaVencimiento(LocalDate.now().plusMonths(i));
@@ -189,8 +191,8 @@ public class VentaServiceImpl extends CommonServiceImpl<Venta, VentaRepository> 
     @Override public List<Venta> findByCliente(Long id) { return repository.findByClienteId(id); }
     @Override public List<LetraVenta> findLetrasPorVenta(Long id) { return letraRepo.findByVentaId(id); }
     @Override public List<LetraVenta> findLetrasVencidas() {
-        return letraRepo.findByFechaVencimientoBeforeAndEstado(
-            LocalDate.now(), LetraVenta.EstadoLetra.PENDIENTE);
+        // Buscar letras ya marcadas como VENCIDO por el scheduler
+        return letraRepo.findByEstado(LetraVenta.EstadoLetra.VENCIDO);
     }
     @Override public List<Venta> findByPeriodo(LocalDate inicio, LocalDate fin) {
         return repository.findByFechaBetween(inicio, fin);
